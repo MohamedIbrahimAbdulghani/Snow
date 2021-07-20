@@ -1,0 +1,412 @@
+* , *:after , *:before
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Montserrat' , sans-serif;
+}
+.container
+{
+    width: 1100px;
+    margin: auto;
+}
+
+/******* section header ******/
+section.header
+{
+    width: 100%;
+    height: 625px;
+    background-image: url(../image/header-bg.jpg);
+    background-size: cover;
+    position: relative;
+}
+section.header .header_head
+{
+    padding-top: 25px;
+}
+section.header .header_head img
+{
+    float: left;
+}
+section.header .header_head nav 
+{
+    float: right;
+}
+section.header .header_head nav ul li 
+{
+    display: inline-block;
+    padding-left: 15px;
+}
+section.header .header_head nav ul li a
+{
+    color: white;
+    text-decoration: none;
+    font-size: 15px;
+}
+.clearfix
+{
+    clear: both;
+}
+section.header .header_content
+{
+    width: 700px;
+    margin: auto;   
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50% , -50%);
+    text-align: center;
+}
+section.header .header_content h1
+{
+    font-size: 50px;
+    font-weight: bold;
+    color: white;
+    margin-bottom: 2%;
+}
+section.header .header_content p
+{
+    font-size: 20px;
+    color: white;
+    margin-bottom: 2%;
+}
+section.header .header_content button
+{
+    width: 180px;
+    padding: 20px;
+    border: 0;
+    outline: none;
+    font-size: 18px;
+    margin-left: 3%;
+    border-radius: 15px;
+    cursor: pointer;
+}
+section.header .header_content button:first-child
+{
+    background-color: white;
+    color: black;
+}
+section.header .header_content button:last-child
+{
+    background-color: #8be2e5;
+    color: white;
+}
+section.header .header_footer
+{
+    width: 30px;
+    height: 53px;
+    position: absolute;
+    top: 80%;
+    left: 50%;
+    border-radius: 18px;
+    border: 2px solid white;
+}
+section.header .header_footer .scroll
+{
+    width: 8px;
+    height: 9px;
+    background-color: white;
+    margin: auto;
+    border-radius: 50px;
+    position: absolute;
+    left: 10px;
+    top: 4px;
+    animation: scrolling 1s ease-in-out infinite;
+}
+@keyframes scrolling
+{
+    0%
+    {
+        opacity: 0;
+        top: 5px;
+    }
+    30%
+    {
+        opacity: 1;
+        top: 10px;
+    }
+    100%
+    {
+        opacity: 0;
+        top: 25px;
+    }
+}
+
+
+/************* section befirst *************/
+section.befirst
+{
+    height: 600px;
+    background-image: url(../image/be-the-first-bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    padding-top: 10%;
+    margin-bottom: 20%;
+    text-align: center;
+}
+section.befirst .befirst_center h2
+{
+    color: white;
+    font-weight: bold;
+    font-size: 40px;
+}
+section.befirst .befirst_center p
+{
+    color: white;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    font-size: 25px;
+}
+section.befirst .befirst_img
+{
+    text-align: center;
+}
+section.befirst .befirst_img img
+{
+    width: 400px;
+}
+ 
+/******** section feature ***********/
+
+section.feature
+{
+    padding-bottom: 20%;
+}
+section.feature .feature_feat
+{
+    width: 30%;
+    float: left;
+    margin-left: 5%;
+}
+section.feature .feature_feat:nth-of-type(1)
+{
+    margin-left: 0;
+}
+section.feature .feature_feat:nth-child(1) hr
+{
+    height: 5px;
+    border: 0;
+    background-color: #6d3f96;
+}
+section.feature .feature_feat:nth-child(2) hr
+{
+    height: 5px;
+    border: 0;
+    background-color: #70cbce;
+}
+section.feature .feature_feat:nth-child(3) hr
+{
+    height: 5px;
+    border: 0;
+    background-color: #fdc05d;
+}
+section.feature .feature_feat h2
+{
+    font-size: 18px;
+    margin-top: 5%;
+    margin-bottom: 5%;
+}
+section.feature .feature_feat p
+{
+    color: #929496;
+}
+
+/******* section pricing ****/
+
+section.pricing
+{
+    padding-top: 10%;
+    padding-left: 10%;
+    background-color: #70cbce;
+    height: auto;
+    text-align: center;
+}
+section.pricing h2
+{
+    color: #fff;
+    font-size: 45px;
+    margin-bottom: 2%;
+}
+section.pricing p
+{
+    font-size: 18px;
+    color: #fff;
+    margin-bottom: 3%;
+}
+section.pricing .pricing_flex
+{
+    display: flex;
+    width: 90%;
+    justify-content: center;
+}
+section.pricing .pricing_flex .flex_item
+{
+    width: 32%;
+}
+section.pricing .pricing_flex .flex_item:nth-of-type(1),
+section.pricing .pricing_flex .flex_item:nth-of-type(3)
+{
+    margin-top: 2%;
+}
+section.pricing .pricing_flex .flex_item ul
+{
+    list-style: none;
+    background-color: #fff;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section.pricing .pricing_flex .flex_item ul li.price
+{
+    background-color: #000;
+    color: #fff;
+    padding: 20px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+section.pricing .pricing_flex .flex_item ul li.doller
+{
+    background-color: #231f20;
+    color: #fff;
+    padding: 15px;
+    font-size: 30px;
+    font-weight: bold;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing_flex .flex_item ul li.doller small
+{
+    font-weight: normal;
+    color: #929496;
+}
+section.pricing .pricing_flex .flex_item ul:hover
+{
+    margin-top: -10px;
+    transition: all 0.5s ease-in-out;
+}
+section.pricing .pricing_flex .flex_item ul:hover li.doller
+{
+    background-color: #333;
+}
+section.pricing .pricing_flex .flex_item ul li.list
+{
+    padding: 20px;
+    border-bottom: 1px dotted #E8EAEA;
+    font-weight: bold;
+}
+section.pricing .pricing_flex .flex_item ul li.content
+{
+    color: #929496;
+    padding: 20px;
+    font-size: 13px;
+    font-weight: normal;
+}
+section.pricing .pricing_flex .flex_item ul li.btn
+{
+    padding: 15px;
+    color: #70cbce;
+    text-transform: uppercase;
+}
+section.pricing .pricing_flex .flex_item ul li.btn:hover
+{
+    background-color: #f5f5f5;
+} 
+
+/******* section invite ****/
+section.invite
+{
+    height: auto;
+    padding-top: 10%;
+    padding-bottom: 10%;
+    background-color: #f5f5f5;
+    text-align: center;
+}
+section.invite img
+{
+    width: 50px;
+    border: 3px solid #70cbce;
+    border-radius: 10px;
+}
+section.invite h2
+{
+    font-size: 40px;
+    margin-bottom: 2%;
+}
+section.invite p
+{
+    margin-bottom: 2%;
+}
+section.invite input
+{
+    display: block;
+    width: 300px;
+    margin: auto;
+    height: 50px;
+    border: 0;
+    padding: 10px;
+    outline: 0;
+    margin-bottom: 2%;
+    border-radius: 10px;
+}
+section.invite input::-webkit-input-placeholder
+{
+    color: #aaa;
+}
+section.invite button
+{
+    width: 200px;
+    height: 50px;
+    background-color: #70cbce;
+    padding: 10px;
+    border: 0;
+    outline: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+/********** section info ********/
+section.info
+{
+    padding-top: 10%;
+    padding-bottom: 10%;
+}
+section.info .info_desc
+{
+    width: 70%;
+    margin: auto;
+}
+section.info .info_desc .info_img
+{
+    width: 20%;
+    float: left;
+}
+section.info .info_desc .info_information
+{
+    width: 80%;
+    float: left;
+}
+/************ footer ************/
+footer
+{
+    padding-bottom: 5%;
+}
+footer div.left
+{
+    float: left;
+}
+footer div.left span
+{
+    padding-right: 10px;
+}
+footer div.left img
+{
+    width: 25px;
+    height: 25px;
+}
+footer div.right
+{
+    float: right;
+}
+footer div.right span
+{
+    color: #ccc;
+}
